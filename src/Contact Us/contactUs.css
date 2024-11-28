@@ -1,0 +1,66 @@
+.contact-us {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #183645;
+}
+
+.contact-us .svg {
+  background-color: #183645;
+  border-radius: 10px;
+}
+
+.contact-us .co-details {
+  color: #e8e6dd;
+  text-align: right;
+  line-height: 3rem;
+  font-size: 28px;
+  padding: 3rem auto;
+}
+
+.co-details > span {
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+}
+
+.co-details > span > p {
+  font-family: "Cairo", sans-serif;
+}
+
+.co-details > span > a {
+  color: #e8e6dd;
+}
+
+@media (max-width: 450px) {
+  .contact-us {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .contact-us .svg {
+    width: 50%;
+  }
+
+  .contact-us .co-details {
+    font-size: 18px;
+    line-height: 0.5rem;
+    padding: 0 0;
+  }
+
+  .co-details > span {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    gap: 7px;
+    text-align: right;
+    text-wrap: nowrap;
+  }
+
+  .co-details > span > p {
+  }
+}

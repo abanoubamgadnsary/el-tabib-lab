@@ -1,0 +1,33 @@
+.servicesContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background-color: #183645;
+}
+
+.servicesContainer .text {
+  width: 100%;
+  display: inline-flex;
+  color: #fff;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.servicesContainer > .text > p {
+  font-size: 14px;
+}
+
+@media (max-width: 450px) {
+  .servicesContainer .text {
+    margin-top: 0.5rem;
+    gap: 10px;
+  }
+
+  .servicesContainer > .text > h1 {
+    font-size: 17px;
+  }
+
+  .servicesContainer > .text > p {
+    font-size: 10px;
+  }
+}
