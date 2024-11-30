@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("/src/ai-generated-8846860_1280.jpg");
+  background-image: url("../public/photos/ai-generated-8846860_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-block-size: 90vh;

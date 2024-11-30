@@ -71,7 +71,7 @@
 
 .btn button {
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 8px;
   border: none;
   width: 100px;
   font-size: 16px;
@@ -81,7 +81,6 @@
   color: #eff1f2;
   transition: 300ms;
 }
-
 .btn button:hover {
   background-color: #e8e6dd;
   color: #13253e;

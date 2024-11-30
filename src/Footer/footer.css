@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  height: 50px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.footer > img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.footer .copy-right {
+  margin-left: 2rem;
+}
+
+.footer .shortcuts {
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .icon-facebook-square > a {
+  color: #111;
+}
+
+.footer .icon-facebook-square,
+.footer .icon-phone-square {
+  display: flex;
+  gap: 5px;
+  flex-direction: row-reverse;
+}
