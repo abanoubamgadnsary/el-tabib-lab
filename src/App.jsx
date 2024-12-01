@@ -13,7 +13,7 @@ function App() {
       <hr />
 
       <Main
-        img={"../public/photos/analysis-2030261_1280.jpg"}
+        img={"/photos/analysis-2030261_1280.jpg"}
         header={"Our Vision"}
         direction={"left"}
       />
