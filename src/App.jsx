@@ -18,7 +18,7 @@ function App() {
         direction={"left"}
       />
       <Main
-        img={"./public/photos/teachers-5499190_1280.jpg"}
+        img={"./photos/teachers-5499190_1280.jpg"}
         header={"Our Mission"}
         direction={"right"}
       />

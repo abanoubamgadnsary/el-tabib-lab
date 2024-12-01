@@ -5,7 +5,7 @@ function Footer() {
   const updatedYear = year.getFullYear();
   return (
     <div className="footer ">
-      <img src="public/photos/Eltabib Lab cover page.png" alt="" />
+      <img src="./photos/Eltabib Lab cover page.png" alt="" />
       <p className="copy-right">
         Copyright &copy;{updatedYear}.El-TABEB|LAB.All Rights Reserved{" "}
       </p>

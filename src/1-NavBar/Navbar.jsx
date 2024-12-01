@@ -4,7 +4,7 @@ function Navbar() {
     <nav className="nav">
       <div className="logo-container ">
         <a className="logo" href="">
-          <img src="/public/photos/EL TABIB LOGO PNG.png" alt="" />
+          <img src="./photos/EL TABIB LOGO PNG.png" alt="" />
         </a>
       </div>
       <div className="list">
