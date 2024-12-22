@@ -23,17 +23,18 @@
   justify-content: center;
   width: 30%;
   margin-right: 10rem;
-  text-align: center;
 }
 
 .text p {
   font-size: 24px;
 }
 .text h1 {
+  width: 100%;
   font-size: 30px;
 }
 
 .text button {
+  font-family: inherit;
   padding: 15px;
   width: 50%;
   background: transparent;

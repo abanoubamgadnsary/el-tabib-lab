@@ -73,13 +73,14 @@
   padding: 10px;
   border-radius: 8px;
   border: none;
-  width: 100px;
+  width: 130px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   background-color: #183645;
   color: #eff1f2;
   transition: 300ms;
+  font-family: inherit;
 }
 .btn button:hover {
   background-color: #e8e6dd;

@@ -3,6 +3,7 @@ import "./footer.css";
 function Footer() {
   const year = new Date();
   const updatedYear = year.getFullYear();
+  
   return (
     <div className="footer ">
       <img src="./photos/Eltabib Lab cover page.png" alt="" />

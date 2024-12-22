@@ -1,23 +1,28 @@
+import { useTranslation } from "react-i18next";
 import "./hero.css";
 
 function Hero() {
   function exploerButton() {
     const el = document.getElementById("about");
     el.scrollIntoView();
-    console.log(el);
   }
+
+  const { t, i18n } = useTranslation();
+  const heroDescLines = t("hero.description").split("\n");
 
   return (
     <section className="hero" id="main">
-      <div className="text">
-        <h1>Welcome to EL-TABEB|LAB</h1>
+      <div
+        className="text"
+        style={{ direction: i18n.resolvedLanguage === "en" ? "ltr" : "rtl" }}
+      >
+        <h1>{t("hero.title")}</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit Dolorem
-          similique eos eius ipsam pariatur voluptas, consequuntur ex eligendi
-          perspiciatis odio optio ducimus molestiae tenetur consequatur modi
-          animi facilis praesentium sit!
+          {heroDescLines.map((line, index) => (
+            <p key={index}>{line}</p>
+          ))}
         </p>
-        <button onClick={exploerButton}>Explore More</button>
+        <button onClick={exploerButton}> {t("hero.explore")} </button>
       </div>
     </section>
   );

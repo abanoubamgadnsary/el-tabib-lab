@@ -1,0 +1,25 @@
+{
+  "navbar": {
+    "main": "Main",
+    "about": "About Us",
+    "service": "Services",
+    "contact": "Contact Us",
+    "log-in": "Log In",
+    "sign-up": "Sign Up"
+  },
+  "hero": {
+    "title": "Welcome to EL-TABEB|LAB",
+    "description": "Uniting Chemists and Medical Analysis specialists' expertise to revolutionize health care excellence in all Sohag government.\n Inspiring collaborative innovation, transforming patient care through precision laboratory service, and highly qualified teamwork.",
+    "explore": "Explore More"
+  },
+  "main": {
+    "our vision": "our Vision",
+    "our mission": "our Mission",
+    "vision": "\u2022 Elevating Medical excellence through cutting-edge chemistry and biology solutions, fostering a culture of collaboration & precision, and passion.\n\u2022 Our inspiring Goal: Expand to deliver high-class chemistry and biology unique service for Upper Egypt healthcare",
+    "mission": "We reassure you about your health Empowering health care decisions through precise laboratory testing, educational, and community outreach.\n\u2022 We committed to:\n1. Enhance patient outcomes through kind communication and supportive diagnostic tool.\n2. Delivering reliable, efficient, and precise laboratory services.\n3. Ensure patient-centric, timely and confidential services."
+  },
+  "our services": {
+    "our services": "Our Services",
+    "service name": "Service Name"
+  }
+}

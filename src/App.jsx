@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Navbar from "./1-NavBar/Navbar";
 import Hero from "./2-Hero/Hero";
 import Main from "./3-Main/Main";
@@ -6,21 +7,35 @@ import Footer from "./Footer/Footer";
 import Services from "./Services/Services";
 
 function App() {
+  const { t, i18n } = useTranslation();
+  const missionLines = t("main.mission").split("\n");
+  const visionLines = t("main.vision").split("\n");
+  const missionTitleLines = t("main.our mission").split("\n");
+  console.log(missionTitleLines);
+
   return (
-    <div>
+    <div className={i18n.resolvedLanguage === "en" ? "font-en" : "font-ar"}>
       <Navbar />
       <Hero />
       <hr />
 
       <Main
         img={"./photos/analysis-2030261_1280.jpg"}
-        header={"Our Vision"}
+        header={t("main.our vision")}
         direction={"left"}
+        content={visionLines.map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
       />
       <Main
         img={"./photos/teachers-5499190_1280.jpg"}
-        header={"Our Mission"}
+        header={missionTitleLines.map((line, index) => (
+          <h1 key={index}>{line}</h1>
+        ))}
         direction={"right"}
+        content={missionLines.map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
       />
 
       <Services />

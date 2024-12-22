@@ -1,20 +1,23 @@
+import { useTranslation } from "react-i18next";
 import "./main.css";
 
-function Main({ img, header, direction }) {
+function Main({ img, header, direction, content }) {
+  const { i18n } = useTranslation();
   return (
     <section className="main" id="about">
       <div className={direction}>
         <div className="img-container">
           <img src={img} alt="" />
         </div>
-        <div className="text-co">
+        <div
+          className="text-co"
+          style={{
+            direction: i18n.resolvedLanguage === "en" ? "ltr" : "rtl",
+            fontFamily: i18n.resolvedLanguage === "en" ? "Geist Mono" : "Cairo",
+          }}
+        >
           <h1> {header}</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            nulla molestiae laudantium dolorum amet, neque perspiciatis ducimus
-            sapiente molestias mollitia temporibus doloribus ex vel, nostrum
-            distinctio sunt ea. Adipisci, quas.
-          </p>
+          <p>{content}</p>
         </div>
       </div>
     </section>

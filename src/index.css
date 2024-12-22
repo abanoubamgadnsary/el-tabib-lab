@@ -7,7 +7,12 @@
   box-sizing: border-box;
   font-weight: 600;
   scroll-behavior: smooth;
-  font-family: "Geist Mono", monospace;
+}
+.font-en {
+  font-family: "Geist Mono", sans-serif;
+}
+.font-ar {
+  font-family: "Cairo", sans-serif;
 }
 
 body {

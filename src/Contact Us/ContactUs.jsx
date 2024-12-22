@@ -1,10 +1,16 @@
 import "./contactUs.css";
-import Lottie from "lottie-react";
-import contact from "../../public/animation/Animation - 1732563904820.json";
-
+// import Lottie from "lottie-react";
+// import contact from "../../public/animation/Animation - 1732563904820.json";
+import ContactSVG from "../../public/animation/contact-us-animate.svg";
 function ContactUs() {
   return (
     <section className="contact-us" id="contact">
+      <div className="svg">
+        <img src={ContactSVG} alt="SVG" />
+      </div>
+
+      {/*       
+
       <div className="svg ">
         <Lottie
           style={{
@@ -13,7 +19,7 @@ function ContactUs() {
           }}
           animationData={contact}
         />
-      </div>
+      </div> */}
       <div className="co-details ">
         <span className="icon-map-marker">
           <p>.فرع البحر: ش المؤسسة للنظارات خلف سلم المحطة</p>
