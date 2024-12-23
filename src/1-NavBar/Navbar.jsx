@@ -9,34 +9,44 @@ const lngs = {
 function Navbar() {
   const { t, i18n } = useTranslation();
 
+  const changeLanguage = (event) => {
+    const language = event.target.value;
+    i18n.changeLanguage(language);
+  };
+
   return (
     <nav className="nav">
       <div className="logo-container ">
         <a className="logo" href="">
           <img src="./photos/EL TABIB LOGO PNG.png" alt="" />
         </a>
+      </div>
+      <select
+        name="language"
+        id="language-select"
+        className="select"
+        onChange={changeLanguage}
+      >
         {Object.keys(lngs).map((lng) => (
-          <button
+          <option
             key={lng}
             style={{
               fontWeight: i18n.resolvedLanguage === lng ? "bold" : "normal",
             }}
-            type="submit"
-            onClick={() => i18n.changeLanguage(lng)}
+            value={lng}
           >
             {lngs[lng].nativeName}
-          </button>
+          </option>
         ))}
-      </div>
-      <div
-        className="list"
-        style={
-          i18n.resolvedLanguage === "en"
-            ? { direction: "ltr" }
-            : { direction: "rtl" }
-        }
-      >
-        <ul>
+      </select>
+      <div className="list">
+        <ul
+          style={
+            i18n.resolvedLanguage === "en"
+              ? { direction: "ltr" }
+              : { direction: "rtl" }
+          }
+        >
           <li>
             <a href="#main">{t("navbar.main")}</a>
           </li>

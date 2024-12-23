@@ -16,6 +16,36 @@
 .logo img {
   width: 75px;
 }
+.select {
+  margin: 10px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select:hover {
+  border-color: #888;
+}
+
+.select:focus {
+  border-color: #555;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.select option {
+  font-weight: normal;
+}
+
 .nav ul {
   --_gap: 2rem;
   list-style: none;
