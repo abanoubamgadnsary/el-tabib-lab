@@ -4,7 +4,7 @@ import "./hero.css";
 function Hero() {
   function exploerButton() {
     const el = document.getElementById("about");
-    el.scrollIntoView();
+    el.scrollIntoView({ behavior: "smooth" });
   }
 
   const { t, i18n } = useTranslation();
@@ -12,6 +12,9 @@ function Hero() {
 
   return (
     <section className="hero" id="main">
+      <video className="back-video" autoPlay loop muted>
+        <source src="./Video/197486-905015022_small.mp4" type="video/mp4" />
+      </video>
       <div
         className="text"
         style={{ direction: i18n.resolvedLanguage === "en" ? "ltr" : "rtl" }}

@@ -1,5 +1,4 @@
 .contact-us {
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -10,7 +9,6 @@
 
 .contact-us .svg {
   width: 600px;
-  border-radius: 10px;
 }
 
 .contact-us .co-details {
@@ -38,26 +36,26 @@
   color: #e8e6dd;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
   .contact-us {
     grid-template-columns: 1fr;
-    padding: 1rem;
+    padding: 2rem 0;
   }
   .contact-us .svg {
     width: 50%;
   }
 
   .contact-us .co-details {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 0.5rem;
     padding: 0 0;
   }
 
   .co-details > span {
-    margin: 0.5rem;
+    margin: 0;
     padding: 0.5rem;
     gap: 7px;
     text-align: right;
-    text-wrap: nowrap;
+    line-height: 1.5rem;
   }
 }

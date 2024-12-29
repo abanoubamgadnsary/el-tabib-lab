@@ -1,10 +1,9 @@
 .services {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  margin-top: 5rem;
+  margin: 3rem auto;
 }
 
 .services > h1 {
@@ -14,4 +13,10 @@
   border: 2px solid #183645;
   padding: 15px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .services > h1 {
+    font-size: 20px;
+  }
 }

@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import "./navbar.css";
 
 const lngs = {
-  en: { nativeName: "En" },
   ar: { nativeName: "Ar" },
+  en: { nativeName: "En" },
 };
 
 function Navbar() {
@@ -18,7 +18,7 @@ function Navbar() {
     <nav className="nav">
       <div className="logo-container ">
         <a className="logo" href="">
-          <img src="./photos/EL TABIB LOGO PNG.png" alt="" />
+          <img src="./photos/EL TABIB LOGO PNG.png" alt="Logo" />
         </a>
       </div>
       <select
@@ -26,6 +26,7 @@ function Navbar() {
         id="language-select"
         className="select"
         onChange={changeLanguage}
+        defaultValue={i18n.resolvedLanguage}
       >
         {Object.keys(lngs).map((lng) => (
           <option
@@ -39,6 +40,7 @@ function Navbar() {
           </option>
         ))}
       </select>
+
       <div className="list">
         <ul
           style={

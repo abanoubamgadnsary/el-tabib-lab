@@ -1,3 +1,4 @@
+/* General styles for .nav */
 .nav {
   padding: 0 10px;
   display: flex;
@@ -6,9 +7,9 @@
   background-color: #e8e6dd;
   position: sticky;
   top: 0;
-  width: 100%;
   z-index: 10;
 }
+
 .logo-container {
   padding: 0 10px;
 }
@@ -16,14 +17,19 @@
 .logo img {
   width: 75px;
 }
+
+/* Styles for the .select element */
 .select {
-  margin: 10px;
-  padding: 8px 12px;
-  font-size: 16px;
+  position: absolute;
+  max-width: 40px;
+  left: 0;
+  margin-left: 6.5rem;
+  padding: 8px 10px;
+  font-size: 14px;
   font-family: Arial, sans-serif;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #333;
   appearance: none;
   -webkit-appearance: none;
@@ -112,22 +118,39 @@
   transition: 300ms;
   font-family: inherit;
 }
+
 .btn button:hover {
   background-color: #e8e6dd;
   color: #13253e;
   border: 1px solid #183645;
 }
 
-@media screen and (max-width: 450px) {
-  .btn {
+.modal-open-button {
+  display: none;
+}
+/* Media queries for screen width 750px or less */
+@media screen and (max-width: 750px) {
+  .btn,
+  .nav ul {
     display: none;
   }
-  .nav ul li {
+
+  .select {
+    left: auto;
+    right: 10px;
+    max-width: 35px;
     font-size: 10px;
-    padding: 1rem;
   }
 
   .logo img {
     width: 50px;
+  }
+
+  .modal-open-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
   }
 }

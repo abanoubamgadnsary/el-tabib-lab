@@ -3,10 +3,10 @@ import "./footer.css";
 function Footer() {
   const year = new Date();
   const updatedYear = year.getFullYear();
-  
+
   return (
-    <div className="footer ">
-      <img src="./photos/Eltabib Lab cover page.png" alt="" />
+    <div className="footer">
+      <img src="./photos/EL TABIB LOGO PNG.png" alt="" />
       <p className="copy-right">
         Copyright &copy;{updatedYear}.El-TABEB|LAB.All Rights Reserved{" "}
       </p>

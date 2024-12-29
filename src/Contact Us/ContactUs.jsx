@@ -28,7 +28,7 @@ function ContactUs() {
           <p>.فرع الزهراء: بجوار البنك الاهلي فرع الفتح</p>
         </span>
         <span className="icon-phone-square ">
-          <p>0111657331</p>
+          <p>01116573311</p>
         </span>
         <span className="icon-facebook-square">
           <a href="https://www.facebook.com/profile.php?id=100088403545170&name=xhp_nt_">

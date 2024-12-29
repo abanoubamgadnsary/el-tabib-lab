@@ -17,7 +17,7 @@
   font-size: 14px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
   .servicesContainer .text {
     margin-top: 0.5rem;
     gap: 10px;
