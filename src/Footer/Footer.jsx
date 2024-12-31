@@ -17,7 +17,12 @@ function Footer() {
           </a>
         </span>
         <span className="icon-phone-square ">
-          <p>0111657331</p>
+          <a
+            target="blank"
+            href="https://api.whatsapp.com/send?phone=201116573311"
+          >
+            <p>0111657331</p>
+          </a>
         </span>
       </div>
     </div>

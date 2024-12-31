@@ -5,6 +5,8 @@ import Main from "./3-Main/Main";
 import ContactUs from "./Contact Us/ContactUs";
 import Footer from "./Footer/Footer";
 import Services from "./Services/Services";
+import Testimonial from "./Testimonial/Testimonial";
+import VideoAds from "./videoAds/VideoAds";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -15,6 +17,7 @@ function App() {
 
   return (
     <div className={i18n.resolvedLanguage === "en" ? "font-en" : "font-ar"}>
+      <VideoAds />
       <Navbar />
       <Hero />
       <hr />
@@ -39,6 +42,7 @@ function App() {
       />
 
       <Services />
+      <Testimonial />
       <ContactUs />
       <Footer />
     </div>

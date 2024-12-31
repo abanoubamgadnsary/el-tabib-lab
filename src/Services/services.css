@@ -1,5 +1,6 @@
 .services {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
@@ -16,6 +17,9 @@
 }
 
 @media screen and (max-width: 750px) {
+  .services {
+    height: 100%;
+  }
   .services > h1 {
     font-size: 20px;
   }

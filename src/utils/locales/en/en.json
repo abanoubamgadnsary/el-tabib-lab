@@ -22,5 +22,8 @@
   "our services": {
     "our services": "Our Services",
     "service name": "Service Name"
+  },
+  "testimonial": {
+    "title": "Feedback"
   }
 }

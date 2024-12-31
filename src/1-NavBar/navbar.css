@@ -128,6 +128,11 @@
 .modal-open-button {
   display: none;
 }
+
+nav .shortcuts {
+  display: none;
+}
+
 /* Media queries for screen width 750px or less */
 @media screen and (max-width: 750px) {
   .btn,
@@ -152,5 +157,34 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
+  }
+
+  nav .shortcuts {
+    display: flex;
+    gap: 1rem;
+    font-size: 32px;
+    margin-right: 3rem;
+    cursor: pointer;
+  }
+  .nav .shortcuts .icon-facebook-square {
+    color: #29487d;
+  }
+  .nav .shortcuts .icon-phone-square {
+    color: #075e54;
+  }
+  .nav .shortcuts .icon-phone-square > a {
+    text-decoration: none;
+    color: #09151a;
+  }
+
+  .nav .shortcuts .icon-facebook-square > a,
+  .nav .shortcuts .icon-phone-square > p {
+    color: #09151a;
+  }
+
+  .nav .shortcuts .icon-facebook-square,
+  .nav .shortcuts .icon-phone-square {
+    display: flex;
+    gap: 5px;
   }
 }

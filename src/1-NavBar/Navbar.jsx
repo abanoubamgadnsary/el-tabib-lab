@@ -67,6 +67,21 @@ function Navbar() {
         <button className="log-in">{t("navbar.log-in")}</button>
         <button>{t("navbar.sign-up")}</button>
       </div>
+
+      <div className="shortcuts">
+        <a
+          target="blank"
+          href="https://www.facebook.com/profile.php?id=100088403545170&name=xhp_nt_"
+        >
+          <span className="icon-facebook-square "></span>
+        </a>
+        <a
+          target="blank"
+          href="https://api.whatsapp.com/send?phone=201116573311"
+        >
+          <span className="icon-phone-square "></span>
+        </a>
+      </div>
     </nav>
   );
 }

@@ -1,0 +1,36 @@
+.testimonial {
+  background-color: #183645;
+  margin: 5rem auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-title {
+  color: #e8e6dd;
+  font-size: 32px;
+  font-weight: bolder;
+  border: 2px solid #e8e6dd;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.testimonial > .swiper {
+  width: 33%;
+}
+
+@media screen and (max-width: 750px) {
+  .testimonial {
+    margin: 2rem auto;
+  }
+  .testimonial > .swiper {
+    width: 54%;
+  }
+
+  .testimonial-title {
+    font-size: 16px;
+  }
+}

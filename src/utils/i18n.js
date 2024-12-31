@@ -3,9 +3,8 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import enLang from "./locales/en/en.json";
 import arLang from "./locales/ar/ar.json";
-// the translations
-// (tip move them in a JSON file and import them,
-// or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
+
+// The translations
 const resources = {
   ar: {
     translation: arLang,
@@ -16,19 +15,40 @@ const resources = {
 };
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next) // Passes i18n down to react-i18next
   .use(LanguageDetector)
   .init({
     debug: true,
     fallbackLng: "ar",
     resources,
-    // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
-    // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
-    // if you're using a language detector, do not define the lng option
-
-    interpolation: {
-      escapeValue: false, // react already safes from xss
+    detection: {
+      order: [
+        "querystring",
+        "cookie",
+        "localStorage",
+        "sessionStorage",
+        "navigator",
+        "htmlTag",
+        "path",
+        "subdomain",
+      ],
+      caches: ["localStorage", "cookie"],
+      lookupLocalStorage: "i18nextLng",
+      lookupCookie: "i18nextLng",
+      cookieMinutes: 10,
+      cookieDomain: "myDomain",
+      htmlTag: document.documentElement,
+      // Set `ar` as the default language
+      checkWhitelist: true,
+      checkForSimilarInWhitelist: true,
     },
+    // Language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+    // You can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
+    // If you're using a language detector, do not define the lng option
+    interpolation: {
+      escapeValue: false, // React already safes from XSS
+    },
+    whitelist: ["ar", "en"], // Only allow these languages
   });
 
 export default i18n;

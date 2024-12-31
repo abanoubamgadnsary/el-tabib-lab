@@ -31,7 +31,7 @@ export default function App() {
           slideShadows: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper"
+        className="servicesSwiper"
       >
         <SwiperSlide>
           <ServicesContainer

@@ -29,6 +29,11 @@
 .footer .icon-phone-square {
   color: #075e54;
 }
+.footer .icon-phone-square > a {
+  text-decoration: none;
+  color: #09151a;
+}
+
 .footer .icon-facebook-square > a,
 .footer .icon-phone-square > p {
   color: #09151a;

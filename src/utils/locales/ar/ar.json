@@ -23,5 +23,8 @@
   "our services": {
     "our services": "خدماتنا",
     "service name": "اسم الخدمة"
+  },
+  "testimonial": {
+    "title": "أراء عملائنا"
   }
 }
