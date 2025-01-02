@@ -159,12 +159,13 @@ nav .shortcuts {
     cursor: pointer;
   }
 
-  nav .shortcuts {
+  .nav .shortcuts {
     display: flex;
     gap: 1rem;
     font-size: 32px;
     margin-right: 3rem;
     cursor: pointer;
+    text-decoration: none;
   }
   .nav .shortcuts .icon-facebook-square {
     color: #29487d;

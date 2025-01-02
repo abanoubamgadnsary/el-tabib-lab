@@ -34,6 +34,7 @@
 
 .co-details > span > a {
   color: #e8e6dd;
+  text-decoration: none;
 }
 
 @media (max-width: 750px) {

@@ -12,7 +12,14 @@ function Hero() {
 
   return (
     <section className="hero" id="main">
-      <video className="back-video" autoPlay loop muted>
+      <video
+        className="back-video"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+      >
         <source src="./Video/197486-905015022_small.mp4" type="video/mp4" />
       </video>
       <div

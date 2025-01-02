@@ -27,11 +27,11 @@ function VideoAds() {
               className="video"
               autoPlay
               muted
+              playsInline
               preload="auto"
               loop
               type="video/mp4"
             >
-
               <source
                 src="./Video/WhatsApp Video 2024-12-23 at 20.05.17_39db4d11.mp4"
                 type="video/mp4"

@@ -1,15 +1,15 @@
 .servicesSwiper {
-  width: 90%;
+  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+.servicesSwiper > .swiper-wrapper > .swiper-slide {
   width: 30%;
   border-radius: 5%;
 }
 
-.swiper-slide img {
+.servicesSwiper > .swiper-wrapper > .swiper-slide img {
   width: 100%;
   border-radius: 5%;
   object-fit: cover;
@@ -22,11 +22,8 @@
 }
 
 @media screen and (max-width: 750px) {
-  .swiper-slide {
+  .servicesSwiper > .swiper-wrapper > .swiper-slide {
     width: 65%;
-  }
-  .swiper {
-    padding-top: 10px;
   }
 
   .swiper-button-next:after,

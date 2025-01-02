@@ -22,23 +22,35 @@ function Testimonial() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide className="testimonial-swiper">
-          <img src="./photos/testimonial/1.jpg" alt="" />
+        <SwiperSlide>
+          <div className="testimonial-container">
+            <img src="./photos/testimonial/1.jpg" alt="" />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./photos/testimonial/2.jpg" alt="" />
+          <div className="testimonial-container">
+            <img src="./photos/testimonial/2.jpg" alt="" />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./photos/testimonial/3.jpg" alt="" />
+          <div className="testimonial-container">
+            <img src="./photos/testimonial/3.jpg" alt="" />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./photos/testimonial/4.jpg" alt="" />
+          <div className="testimonial-container">
+            <img src="./photos/testimonial/4.jpg" alt="" />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./photos/testimonial/5.jpg" alt="" />
+          <div className="testimonial-container">
+            <img src="./photos/testimonial/5.jpg" alt="" />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./photos/testimonial/6.jpg" alt="" />
+          <div className="testimonial-container">
+            <img src="./photos/testimonial/6.jpg" alt="" />
+          </div>
         </SwiperSlide>
       </Swiper>
     </section>
