@@ -186,6 +186,8 @@ nav .shortcuts {
   .nav .shortcuts .icon-facebook-square,
   .nav .shortcuts .icon-phone-square {
     display: flex;
+    text-decoration: none;
+
     gap: 5px;
   }
 }
