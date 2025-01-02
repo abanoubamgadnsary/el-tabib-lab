@@ -37,6 +37,15 @@
   text-decoration: none;
 }
 
+.icon-phone-square a {
+  text-decoration: none;
+  color: inherit; /* Matches parent text color */
+}
+
+.icon-phone-square a:hover {
+  color: #007bff; /* Example hover color */
+}
+
 @media (max-width: 750px) {
   .contact-us {
     grid-template-columns: 1fr;

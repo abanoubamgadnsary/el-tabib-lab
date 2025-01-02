@@ -1,6 +1,4 @@
 import "./contactUs.css";
-// import Lottie from "lottie-react";
-// import contact from "../../public/animation/Animation - 1732563904820.json";
 import ContactSVG from "../../public/animation/contact-us-animate.svg";
 function ContactUs() {
   return (
@@ -9,17 +7,6 @@ function ContactUs() {
         <img src={ContactSVG} alt="SVG" />
       </div>
 
-      {/*       
-
-      <div className="svg ">
-        <Lottie
-          style={{
-            backgroundColor: "#183645",
-            borderRadius: "10px",
-          }}
-          animationData={contact}
-        />
-      </div> */}
       <div className="co-details ">
         <span className="icon-map-marker">
           <p>.فرع البحر: ش المؤسسة للنظارات خلف سلم المحطة</p>
@@ -28,7 +15,7 @@ function ContactUs() {
           <p>.فرع الزهراء: بجوار البنك الاهلي فرع الفتح</p>
         </span>
         <span className="icon-phone-square ">
-          <p>01116573311</p>
+          <a href="tel:01116573311">01116573311</a>
         </span>
         <span className="icon-facebook-square">
           <a href="https://www.facebook.com/profile.php?id=100088403545170&name=xhp_nt_">
