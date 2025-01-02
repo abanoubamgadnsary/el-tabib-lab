@@ -165,29 +165,24 @@ nav .shortcuts {
     font-size: 32px;
     margin-right: 3rem;
     cursor: pointer;
-    text-decoration: none;
   }
+
   .nav .shortcuts .icon-facebook-square {
     color: #29487d;
   }
+
   .nav .shortcuts .icon-phone-square {
     color: #075e54;
   }
-  .nav .shortcuts .icon-phone-square > a {
-    text-decoration: none;
-    color: #09151a;
-  }
 
-  .nav .shortcuts .icon-facebook-square > a,
-  .nav .shortcuts .icon-phone-square > p {
-    color: #09151a;
+  .nav .shortcuts a {
+    text-decoration: none; /* Remove underline */
   }
 
   .nav .shortcuts .icon-facebook-square,
   .nav .shortcuts .icon-phone-square {
     display: flex;
     text-decoration: none;
-
-    gap: 5px;
+    gap: 10px;
   }
 }
