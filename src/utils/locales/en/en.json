@@ -25,5 +25,8 @@
   },
   "testimonial": {
     "title": "Feedback"
+  },
+  "contact-us":{
+    "location":"Our Location"
   }
 }

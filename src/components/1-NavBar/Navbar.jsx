@@ -63,10 +63,10 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="btn">
+      {/* <div className="btn">
         <button className="log-in">{t("navbar.log-in")}</button>
         <button>{t("navbar.sign-up")}</button>
-      </div>
+      </div> */}
 
       <div className="shortcuts">
         <a

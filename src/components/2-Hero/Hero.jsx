@@ -27,11 +27,11 @@ function Hero() {
         style={{ direction: i18n.resolvedLanguage === "en" ? "ltr" : "rtl" }}
       >
         <h1>{t("hero.title")}</h1>
-        <p>
+        <div>
           {heroDescLines.map((line, index) => (
             <p key={index}>{line}</p>
           ))}
-        </p>
+        </div>
         <button onClick={exploerButton}> {t("hero.explore")} </button>
       </div>
     </section>

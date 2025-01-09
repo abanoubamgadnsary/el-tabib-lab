@@ -17,7 +17,7 @@ function Main({ img, header, direction, content }) {
           }}
         >
           <h1> {header}</h1>
-          <p>{content}</p>
+          <div>{content}</div>
         </div>
       </div>
     </section>
