@@ -16,6 +16,11 @@ function ContactUs() {
         <span className="icon-map-marker ">
           <p>سوهاج فرع ثاني: الزهراء بجوار البنك الاهلي فرع الفتح</p>
         </span>
+        <span className="icon-map-marker">
+          <p>
+            سوهاج فرع ثالث: المنشاه-امام بنك اسكندرية بجوار التامينات الاجتماعية
+          </p>
+        </span>
         <span className="icon-map-marker ">
           <a
             target="blank"
@@ -26,6 +31,9 @@ function ContactUs() {
         </span>
         <span className="icon-phone-square ">
           <a href="tel:01116573311">01116573311</a>
+        </span>
+        <span className="icon-phone-square ">
+          <a href="tel:0120 7618117">01207618117</a>
         </span>
         <span className="icon-facebook-square">
           <a href="https://www.facebook.com/profile.php?id=100088403545170&name=xhp_nt_">
