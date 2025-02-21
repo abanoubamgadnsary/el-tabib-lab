@@ -1,18 +1,18 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import AppLayout from "./AppLayout";
 import Packages from "./components/Packages/Packages";
 import MainPage from "./components/MainPage/MainPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/el-tabib-lab" element={<AppLayout />}>
+        <Route path="/" element={<AppLayout />}>
           <Route index element={<MainPage />} />
-          <Route path="/el-tabib-lab/packages" element={<Packages />} />
+          <Route path="/packages" element={<Packages />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
