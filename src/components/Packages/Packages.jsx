@@ -4,14 +4,14 @@ const callouts = [
   {
     name: "باقة تحاليل اضطرابات الكبد",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "public/packages/باقة-الكبد.jpg",
+    imageSrc: "public/packages/1.jpg",
     imageAlt: "باقة-الكبد",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة الكبد.",
   },
   {
     name: "باقة-الكلى",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/باقة-الكلى.jpg",
+    imageSrc: "./public/packages/2.jpg",
     imageAlt: "باقة-الكلى",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة الكلى.",
   },
