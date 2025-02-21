@@ -1,19 +1,20 @@
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
-import liverPackageImg from "../assets/packages/a.jpg";
-import kidneyPackageImg from "../assets/packages/b.jpg";
-import stomachPackageImg from "../assets/packages/c.jpg";
-import pregnantPackageImg from "../assets/packages/d.jpg";
-import bonePackageImg from "../assets/packages/e.jpg";
-import anemiaPackageImg from "../assets/packages/f.jpg";
-import headachPackageImg from "../assets/packages/g.jpg";
-import thinPackageImg from "../assets/packages/h.jpg";
-import bleedingPackageImg from "../assets/packages/i.jpg";
-import hairPackageImg from "../assets/packages/l.jpg";
-import heartPackageImg from "../assets/packages/k.jpg";
-import overWeightPackageImg from "../assets/packages/q.jpg";
-import hypertensionPackageImg from "../assets/packages/j.jpg";
-import diabetesPackageImg from "../assets/packages/m.jpg";
+
+import liverPackageImg from "../../assets/packages/a.jpg";
+import kidneyPackageImg from "../../assets/packages/b.jpg";
+import stomachPackageImg from "../../assets/packages/c.jpg";
+import pregnantPackageImg from "../../assets/packages/d.jpg";
+import bonePackageImg from "../../assets/packages/e.jpg";
+import anemiaPackageImg from "../../assets/packages/f.jpg";
+import headachPackageImg from "../../assets/packages/g.jpg";
+import thinPackageImg from "../../assets/packages/h.jpg";
+import bleedingPackageImg from "../../assets/packages/i.jpg";
+import hairPackageImg from "../../assets/packages/l.jpg";
+import heartPackageImg from "../../assets/packages/k.jpg";
+import overWeightPackageImg from "../../assets/packages/q.jpg";
+import hypertensionPackageImg from "../../assets/packages/j.jpg";
+import diabetesPackageImg from "../../assets/packages/m.jpg";
 
 const callouts = [
   {
