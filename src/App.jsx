@@ -7,9 +7,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="el-tabib-lab" element={<AppLayout />}>
+        <Route path="/el-tabib-lab" element={<AppLayout />}>
           <Route index element={<MainPage />} />
-          <Route path="packages" element={<Packages />} />
+          <Route path="/packages" element={<Packages />} />
         </Route>
       </Routes>
     </BrowserRouter>
