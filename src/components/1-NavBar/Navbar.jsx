@@ -92,7 +92,7 @@ function Navbar() {
           }
         >
           <li>
-            <Link to="/">{t("navbar.main")}</Link>
+            <Link to="/el-tabib-lab">{t("navbar.main")}</Link>
           </li>
           <li>
             <a href="#about">{t("navbar.about")}</a>
