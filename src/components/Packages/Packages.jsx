@@ -1,32 +1,46 @@
-/* eslint-disable no-undef */
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
+import liverPackageImg from "../assets/packages/a.jpg";
+import kidneyPackageImg from "../assets/packages/b.jpg";
+import stomachPackageImg from "../assets/packages/c.jpg";
+import pregnantPackageImg from "../assets/packages/d.jpg";
+import bonePackageImg from "../assets/packages/e.jpg";
+import anemiaPackageImg from "../assets/packages/f.jpg";
+import headachPackageImg from "../assets/packages/g.jpg";
+import thinPackageImg from "../assets/packages/h.jpg";
+import bleedingPackageImg from "../assets/packages/i.jpg";
+import hairPackageImg from "../assets/packages/l.jpg";
+import heartPackageImg from "../assets/packages/k.jpg";
+import overWeightPackageImg from "../assets/packages/q.jpg";
+import hypertensionPackageImg from "../assets/packages/j.jpg";
+import diabetesPackageImg from "../assets/packages/m.jpg";
+
 const callouts = [
   {
     name: "باقة تحاليل اضطرابات الكبد",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: `${process.env.PUBLIC_URL}/packages/a.jpg`,
+    imageSrc: liverPackageImg,
     imageAlt: "باقة-الكبد",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة الكبد.",
   },
   {
     name: "باقة-الكلى",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/b.jpg",
+    imageSrc: kidneyPackageImg,
     imageAlt: "باقة-الكلى",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة الكلى.",
   },
   {
     name: "باقة الم المعدة",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/c.jpg",
+    imageSrc: stomachPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة ألم المعدة.",
   },
   {
     name: "باقة تاخر الحمل",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/d.jpg",
+    imageSrc: pregnantPackageImg,
     imageAlt:
       "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة تأخر الحمل.",
@@ -34,7 +48,7 @@ const callouts = [
   {
     name: "باقه الام العظام",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/e.jpg",
+    imageSrc: bonePackageImg,
     imageAlt:
       "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة آلام العظام.",
@@ -42,63 +56,63 @@ const callouts = [
   {
     name: "باقه الانيميا",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/f.jpg",
+    imageSrc: anemiaPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة الأنيميا.",
   },
   {
     name: "باقه الصداع",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/g.jpg",
+    imageSrc: headachPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة الصداع.",
   },
   {
     name: "باقه النحافه",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/h.jpg",
+    imageSrc: thinPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة النحافة.",
   },
   {
     name: "باقه تحاليل النزيف",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/i.jpg",
+    imageSrc: bleedingPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة تحاليل النزيف.",
   },
   {
     name: "باقه تساقط الشعر",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/l.jpg",
+    imageSrc: hairPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة تساقط الشعر.",
   },
   {
     name: "باقه جلطات القلب",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/k.jpg",
+    imageSrc: heartPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=بخصوص%20باقه%20جلطات%20القلب",
   },
   {
     name: "باقه زياده الوزن",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/q.jpg",
+    imageSrc: overWeightPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=بخصوص%20باقه%20زياده%20الوزن",
   },
   {
     name: "باقه ضغظ الدم",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/j.jpg",
+    imageSrc: hypertensionPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=بخصوص%20باقه%20ضغظ%20الدم",
   },
   {
     name: "باقه متابعه السكر",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "./public/packages/m.jpg",
+    imageSrc: diabetesPackageImg,
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "https://wa.me/201116573311?text=بخصوص%20باقه%20متابعه%20السكر",
   },
