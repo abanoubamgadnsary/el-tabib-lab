@@ -19,7 +19,6 @@
 
 .right {
   display: flex;
-
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
@@ -64,6 +63,8 @@
   }
   .left {
     grid-template-columns: 1fr;
+    height: 80%;
+    place-items: center;
     text-align: center;
     grid-gap: 0px;
     padding-top: 5rem;
@@ -74,6 +75,7 @@
   .right {
     display: grid;
     grid-template-columns: 1fr;
+    place-items: center;
     padding: 1rem;
     text-align: center;
     line-height: 1.5rem;
@@ -82,14 +84,12 @@
 
   .text-co {
     width: 100%;
+    gap: 1rem;
   }
 
   .img-container img {
     width: 70%;
-  }
-
-  .text-co {
-    gap: 1rem;
+    margin: 0 auto;
   }
 
   .text-co h1 {

@@ -1,18 +1,31 @@
 import { useTranslation } from "react-i18next";
 import "./navbar.css";
+import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 
+// import Switch from "../SideBar/ToggleButton/Switch";
+import { useState } from "react";
+import { IoMdMenu } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
+import { IconContext } from "react-icons/lib";
 const lngs = {
   ar: { nativeName: "Ar" },
   en: { nativeName: "En" },
 };
 
 function Navbar() {
+  const [isExpanded, setIsExpanded] = useState(false);
   const { t, i18n } = useTranslation();
-
   const changeLanguage = (event) => {
     const language = event.target.value;
     i18n.changeLanguage(language);
   };
+
+  function handleExpand() {
+    setIsExpanded((prev) => !prev);
+  }
+
+  // const memoizedSwitch = useMemo(() => <Switch />, []);
 
   return (
     <nav className="nav">
@@ -41,16 +54,45 @@ function Navbar() {
         ))}
       </select>
 
-      <div className="list">
+      <button
+        onClick={handleExpand}
+        className="toggle-button"
+        role="dialoge"
+        aria-expanded={isExpanded}
+      >
+        <IconContext.Provider
+          value={{
+            style: { width: "2rem", height: "2rem", cursor: "pointer" },
+            color: "#13253e",
+          }}
+        >
+          <motion.div
+            key={isExpanded ? "close" : "menu"}
+            initial={{ opacity: 0, scale: 0.8, rotate: -90 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            exit={{ opacity: 0, scale: 0.8, rotate: 90 }}
+            transition={{ duration: 0.3 }}
+          >
+            {isExpanded ? <IoCloseSharp /> : <IoMdMenu />}
+          </motion.div>
+        </IconContext.Provider>
+      </button>
+      <div
+        className={`list-menu ${isExpanded ? "expanded" : ""}`}
+        aria-hidden={isExpanded}
+      >
         <ul
           style={
-            i18n.resolvedLanguage === "en"
+            (i18n.resolvedLanguage === "en"
               ? { direction: "ltr" }
-              : { direction: "rtl" }
+              : { direction: "rtl" },
+            i18n.resolvedLanguage === "en"
+              ? { fontFamily: "Geist Mono" }
+              : { fontFamily: "Cairo" })
           }
         >
           <li>
-            <a href="#main">{t("navbar.main")}</a>
+            <Link to="/">{t("navbar.main")}</Link>
           </li>
           <li>
             <a href="#about">{t("navbar.about")}</a>
@@ -60,6 +102,9 @@ function Navbar() {
           </li>
           <li>
             <a href="#contact">{t("navbar.contact")}</a>
+          </li>
+          <li>
+            <Link to={"packages"}>{t("navbar.packages")}</Link>
           </li>
         </ul>
       </div>
@@ -82,6 +127,8 @@ function Navbar() {
           <span className="icon-phone-square "></span>
         </a>
       </div>
+      {/* Overlay to close the menu when clicking outside */}
+      {isExpanded && <div className="overlay" onClick={handleExpand}></div>}
     </nav>
   );
 }

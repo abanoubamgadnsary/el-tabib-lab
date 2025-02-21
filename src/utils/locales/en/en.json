@@ -4,6 +4,7 @@
     "about": "About Us",
     "service": "Services",
     "contact": "Contact Us",
+    "packages": "Packages",
     "menu": "Menu",
     "log-in": "Log In",
     "sign-up": "Sign Up"
@@ -26,7 +27,10 @@
   "testimonial": {
     "title": "Feedback"
   },
-  "contact-us":{
-    "location":"Our Location"
+  "contact-us": {
+    "location": "Our Location"
+  },
+  "packages": {
+    "title": "Packages"
   }
 }

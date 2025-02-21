@@ -4,6 +4,7 @@
     "about": "من نحن",
     "service": "خدماتنا",
     "contact": "اتصل بنا",
+    "packages": "الباقات",
     "menu": "القائمة",
     "log-in": "تسجيل الدخول",
     "sign-up": "انشاء حساب"
@@ -29,5 +30,8 @@
   },
   "contact-us": {
     "location": "موقعنا"
+  },
+  "packages": {
+    "title": "الباقات"
   }
 }
