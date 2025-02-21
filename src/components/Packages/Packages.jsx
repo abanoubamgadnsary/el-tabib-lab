@@ -1,10 +1,11 @@
+/* eslint-disable no-undef */
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 const callouts = [
   {
     name: "باقة تحاليل اضطرابات الكبد",
     description: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    imageSrc: "public/packages/a.jpg",
+    imageSrc: `${process.env.PUBLIC_URL}/packages/a.jpg`,
     imageAlt: "باقة-الكبد",
     href: "https://wa.me/201116573311?text=مرحبًا، أود الاستفسار عن تفاصيل باقة الكبد.",
   },
